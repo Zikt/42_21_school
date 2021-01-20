@@ -1,0 +1,15 @@
+# Compiled Object files
+*.o
+
+# Precompiled Headers
+*.gch
+
+# Compiled Static libraries
+*.a
+
+# Main
+a.out
+
+# DS_Store
+.DS_Store
+pft/
