@@ -6,7 +6,7 @@
 #    By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/01/06 16:35:08 by pgurn             #+#    #+#              #
-#    Updated: 2021/01/20 18:11:34 by pgurn            ###   ########.fr        #
+#    Updated: 2021/01/25 19:25:36 by pgurn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ C = clang
 
 NAME = libftprintf.a
 
-FLAGS = -Wall -Wextra -Werror -O2
+FLAGS = -Wall -Wextra -Werror
 
 LIBFT = libft
 
@@ -24,28 +24,20 @@ DIR_O = obj
 
 HEADER = includes
 
-SOURCES = ft_printf.c \
-		  ft_parser.c \
-		c_processor.c \
-		d_i_processor.c \
-		f_processor.c \
-		f_processor2.c \
-		ft_itoa_long.c \
-		o_processor.c \
-		o_processor2.c \
-		p_processor.c \
-		proc_handle.c \
-		s_processor.c \
-		u_processor.c \
-		ulong_init.c \
-		x_processor.c \
-		x_processor2.c \
+SOURCES = 			ft_printf.c		\
+					ft_parse.c		\
+					ft_convert.c	\
+					ft_convert_int.c\
+					ft_ft.c			\
+					ft_ft2.c 
 
 SRCS = $(addprefix $(DIR_S)/,$(SOURCES))
 
 OBJS = $(addprefix $(DIR_O)/,$(SOURCES:.c=.o))
 
 all: $(NAME)
+
+bonus : ${NAME}
 
 $(NAME): $(OBJS)
 	@make -C $(LIBFT)

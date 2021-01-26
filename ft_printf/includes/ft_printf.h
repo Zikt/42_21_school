@@ -6,61 +6,84 @@
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/14 15:52:15 by pgurn             #+#    #+#             */
-/*   Updated: 2021/01/20 22:46:57 by pgurn            ###   ########.fr       */
+/*   Updated: 2021/01/25 19:27:04 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdio.h>
-# include <stdarg.h>
-# include <unistd.h>
 # include "../libft/libft.h"
+# include <stdlib.h>
+# include <unistd.h>
+# include <stdarg.h>
+# include <string.h>
 
-typedef struct	s_info
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 64
+# endif
+
+typedef struct	s_printf
 {
-	char		flags[5];
-	size_t		width;
-	int			prec;
-	char		length[3];
-	char		type;
-}				t_info;
-
-t_info			g_info;
-va_list			g_ap;
-int				g_printed;
-
-# define PRINT(x) ft_putchar(x); g_printed++;
-# define ALLOC(x, y, z) if(!(x = (y)malloc(z))) {ft_putendl("ERROR"); exit(0);}
-# define ALLOC_SIZE 60
+	char			buf[BUFFER_SIZE + 1];
+	int				buf_count;
+	int				ret;
+	int				width;
+	int				precision;
+	int				precision_width;
+	int				precision_parsing;
+	int				converter;
+	int				minus;
+	int				zero;
+	int				plus;
+	int				space;
+	int				sharp;
+	int				len;
+	int				sp_len;
+	int				is_int;
+	int				h_count;
+	int				l_count;
+	intmax_t		n;
+	uintmax_t		u;
+	int				i;
+}				t_printf;
 
 /*
 **==========================printf Main fn Start============================
 */
-int				ft_printf(const char *s, ...);
-void			ft_parser(char **f);
-void			proc_process(void);
-void			c_process(void);
-void			s_process(void);
-void			p_process(void);
-void			d_i_process(void);
-void			o_process(void);
-void			u_process(void);
-void			x_process(int var);
-void			f_process(void);
-char			*ft_abs_itoa_long(unsigned long long n);
-void			add_flags(char **f, int *i);
-void			add_width(char **f, int *i);
-void			add_precision(char **f, int *i);
-void			add_length(char **f, int *i);
-void			in_double(char **num, long double f);
-void			ulong_init(unsigned long long *a);
-void			in_octave(char **dec, unsigned long long o);
-void			x_minflag(unsigned long long x, int var, int numlen, char *num);
-void			x_zeroflag(unsigned long long x,
-							int var, int numlen, char *num);
-void			x_noflag(unsigned long long x, int var, int numlen, char *num);
+int				ft_printf(const char *str, ...);
+void			ft_init_struct(t_printf *tab);
+void			ft_str_it(va_list ap, t_printf *tab, char *str);
+void			ft_parse(char *str, va_list ap, t_printf *tab);
+void			ft_check_flag(char *str, va_list ap, t_printf *tab);
+void			ft_add_to_buff(t_printf *tab, char *str, int len);
+void			ft_dump_buffer(t_printf *tab);
+void			ft_convert_str(va_list ap, t_printf *tab);
+void			ft_convert_int(va_list ap, t_printf *tab);
+void			ft_convert_uint(va_list ap, t_printf *tab);
+void			ft_convert_x(va_list ap, t_printf *tab);
+void			ft_convert_p(va_list ap, t_printf *tab);
+void			ft_convert_c(va_list ap, t_printf *tab);
+void			ft_convert_n(va_list ap, t_printf *tab);
+void			ft_convert_o(va_list ap, t_printf *tab);
+void			ft_size_u(va_list ap, t_printf *tab);
+char			*ft_strdup_l(char *s, t_printf *tab);
+char			*ft_print_sp(t_printf *tab);
+char			*ft_num_precision(char *str, t_printf *tab);
+void			ft_join_all(char *str, char *sp, t_printf *tab);
+char			*ft_c_to_str(char c);
+void			ft_add_sign(t_printf *tab);
+int				ft_atoi_printf(char *str, int *i);
+char			*itoa_printf(intmax_t n);
+char			*uitoa_printf(uintmax_t n);
+char			*itoa_base_pf(uintmax_t num, char *base);
+size_t			intlen_printf(intmax_t n);
+size_t			uintlen_printf(uintmax_t n);
+size_t			intlen_base_pf(uintmax_t n, char *base);
+void			ft_set_precision(t_printf *tab);
+void			ft_reset_flags(t_printf *tab);
+size_t			ft_is_flag(char c);
+size_t			ft_is_from_pf(char c);
 /*
 **==========================printf Main fn End==============================
 */

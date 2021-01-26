@@ -6,7 +6,7 @@
 #    By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/04 12:23:18 by pgurn             #+#    #+#              #
-#    Updated: 2021/01/20 18:09:21 by pgurn            ###   ########.fr        #
+#    Updated: 2021/01/25 20:32:11 by pgurn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,11 @@ SRC_PART1 = ft_memset.c		\
 			ft_toupper.c	\
 			ft_tolower.c	\
 			ft_calloc.c		\
-			ft_strdup.c
+			ft_strdup.c     \
+			ft_c_to_str.c   \
+			ft_intlen.c		\
+			ft_itoa_base.c  \
+			ft_intlen_base.c
 SRC_PART2 = ft_substr.c		\
 			ft_strjoin.c	\
 			ft_strtrim.c	\
@@ -51,7 +55,9 @@ SRC_PART2 = ft_substr.c		\
 			ft_putendl.c	\
 			ft_putnbr_fd.c	\
 			ft_is_inf.c		\
-			ft_is_nan.c	
+			ft_is_nan.c		\
+			ft_uitoa.c		\
+			ft_uintlen.c
 SRC_BONUS = ft_lstnew.c			\
 			ft_lstadd_front.c	\
 			ft_lstsize.c		\
@@ -60,7 +66,7 @@ SRC_BONUS = ft_lstnew.c			\
 			ft_lstdelone.c		\
 			ft_lstclear.c		\
 			ft_lstiter.c		\
-			ft_lstmap.c	
+			ft_lstmap.c			
                         
 NAME = libft.a
 HEADER = libft.h

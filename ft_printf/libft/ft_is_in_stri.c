@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   o_processor2.c                                     :+:      :+:    :+:   */
+/*   ft_is_in_stri.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/19 18:18:53 by pgurn             #+#    #+#             */
-/*   Updated: 2021/01/20 20:13:41 by pgurn            ###   ########.fr       */
+/*   Created: 2021/01/25 19:49:58 by pgurn             #+#    #+#             */
+/*   Updated: 2021/01/25 19:50:01 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
-#include "../libft/libft.h"
+#include "libft.h"
 
-static int	oct_cnt(unsigned long long o)
+int		ft_is_in_stri(char c, char *str)
 {
-	int i;
+	int		i;
 
-	i = 1;
-	while (o /= 8)
-		i++;
-	return (i);
-}
-
-void		in_octave(char **dec, unsigned long long o)
-{
-	int len;
-	int i;
-
-	len = oct_cnt(o);
-	ALLOC(*dec, char*, sizeof(char) * (len + 1));
-	(*dec)[len] = '\0';
-	i = len - 1;
-	while (o / 8)
+	i = 0;
+	while (str[i])
 	{
-		(*dec)[i] = o % 8 + '0';
-		o /= 8;
-		i--;
+		if (str[i] == c)
+			return (i);
+		i++;
 	}
-	(*dec)[i] = o % 8 + '0';
+	return (-1);
 }

@@ -1,40 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_long.c                                     :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/19 18:06:13 by pgurn             #+#    #+#             */
-/*   Updated: 2021/01/20 20:13:06 by pgurn            ###   ########.fr       */
+/*   Created: 2021/01/25 19:41:45 by pgurn             #+#    #+#             */
+/*   Updated: 2021/01/25 20:18:23 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
-#include "../libft/libft.h"
+#include "libft.h"
 
-static size_t	ft_cnt(unsigned long long n)
-{
-	size_t i;
-
-	i = 0;
-	while (n /= 10)
-		i++;
-	return (i);
-}
-
-char			*ft_abs_itoa_long(unsigned long long n)
+char	*ft_itoa_base(uintmax_t n, char *base)
 {
 	char	*str;
-	size_t	len;
+	int		num_len;
+	int		base_len;
 
-	len = 2 + ft_cnt(n);
-	ALLOC(str, char*, len);
-	str[--len] = '\0';
-	while (len--)
+	num_len = ft_intlen_base(n, base);
+	base_len = ft_strlen(base);
+	if (!(str = ft_calloc((num_len + 1), sizeof(char))))
+		return (NULL);
+	str[num_len] = '\0';
+	while (num_len)
 	{
-		str[len] = n % 10 + 48;
-		n /= 10;
+		str[--num_len] = base[n % base_len];
+		n = n / base_len;
 	}
 	return (str);
 }

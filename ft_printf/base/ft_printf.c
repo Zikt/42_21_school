@@ -5,70 +5,98 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/14 15:51:14 by pgurn             #+#    #+#             */
-/*   Updated: 2021/01/20 22:22:34 by pgurn            ###   ########.fr       */
+/*   Created: 2021/01/25 19:03:46 by pgurn             #+#    #+#             */
+/*   Updated: 2021/01/25 20:16:41 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
-#include "../libft/libft.h"
 
-static int g_i;
-
-void		ft_clear(void)
+void	ft_dump_buffer(t_printf *tab)
 {
-	ft_bzero(g_info.flags, sizeof(char) * 5);
-	g_info.width = 0;
-	g_info.precision = -1;
-	ft_bzero(g_info.length, 3);
-	g_info.arg_type = 0;
+	write(1, tab->buf, tab->buf_count);
+	tab->buf_count = 0;
 }
 
-void		ft_parser(char **f)
+void	ft_add_to_buff(t_printf *tab, char *str, int len)
 {
-	ft_clear();
-	add_flags(f, &g_i);
-	add_width(f, &g_i);
-	add_precision(f, &g_i);
-	add_length(f, &g_i);
-	if ((*f)[g_i] == 'c' || (*f)[g_i] == 's' || (*f)[g_i] == 'p' ||
-		(*f)[g_i] == 'd' || (*f)[g_i] == 'i' || (*f)[g_i] == 'o' ||
-		(*f)[g_i] == 'u' || (*f)[g_i] == 'x' || (*f)[g_i] == 'X' ||
-		(*f)[g_i] == 'f' || (*f)[g_i] == '%')
+	int		i;
+
+	i = 0;
+	tab->ret += len;
+	while (i < len)
 	{
-		g_info.arg_type = (*f)[g_i];
-		g_i++;
+		tab->buf[tab->buf_count] = str[i];
+		tab->buf_count++;
+		if (tab->buf_count == BUFFER_SIZE)
+			ft_dump_buffer(tab);
+		i++;
 	}
-	(g_info.arg_type == 'c') ? c_process() : 0;
-	(g_info.arg_type == 's') ? s_process() : 0;
-	(g_info.arg_type == 'p') ? p_process() : 0;
-	(g_info.arg_type == 'd' || g_info.arg_type == 'i') ? d_i_process() : 0;
-	(g_info.arg_type == 'o') ? o_process() : 0;
-	(g_info.arg_type == 'u') ? u_process() : 0;
-	(g_info.arg_type == 'x') ? x_process(0) : 0;
-	(g_info.arg_type == 'X') ? x_process(1) : 0;
-	(g_info.arg_type == 'f') ? f_process() : 0;
-	(g_info.arg_type == '%') ? proc_process() : 0;
 }
 
-int			ft_printf(const char *s, ...)
+void	ft_print_normal(t_printf *tab, char *str)
 {
-	char	*f;
+	int		len;
 
-	f = (char*)s;
-	va_start(g_ap, s);
-	g_printed = 0;
-	g_i = 0;
-	while (f[g_i] != '\0')
+	len = 0;
+	while (str[tab->i] && str[tab->i] != '%')
 	{
-		if (f[g_i] == '%')
-			ft_parser(&f);
-		else
+		tab->buf[tab->buf_count] = str[tab->i];
+		tab->buf_count++;
+		len++;
+		if (tab->buf_count == BUFFER_SIZE)
+			ft_dump_buffer(tab);
+		tab->i++;
+	}
+	tab->ret += len;
+	tab->i--;
+}
+
+void	ft_init_struct(t_printf *tab)
+{
+	tab->buf_count = 0;
+	tab->ret = 0;
+	tab->width = 0;
+	tab->precision = 0;
+	tab->precision_width = 0;
+	tab->precision_parsing = 0;
+	tab->converter = 0;
+	tab->minus = 0;
+	tab->zero = 0;
+	tab->plus = 0;
+	tab->space = 0;
+	tab->sharp = 0;
+	tab->len = 0;
+	tab->sp_len = 0;
+	tab->is_int = 0;
+	tab->h_count = 0;
+	tab->l_count = 0;
+	tab->n = 0;
+	tab->u = 0;
+	tab->i = 0;
+}
+
+int		ft_printf(const char *str, ...)
+{
+	t_printf	tab;
+	va_list		ap;
+
+	ft_init_struct(&tab);
+	va_start(ap, str);
+	while (str[tab.i])
+	{
+		if (str[tab.i] == '%')
 		{
-			ft_putchar(f[g_i++]);
-			g_printed++;
+			if (str[tab.i + 1] == '\0')
+				break ;
+			if (ft_is_from_pf(str[tab.i + 1]))
+				ft_parse((char*)str, ap, &tab);
 		}
+		else
+			ft_print_normal(&tab, (char*)str);
+		tab.i++;
 	}
-	va_end(g_ap);
-	return (g_printed);
+	va_end(ap);
+	ft_dump_buffer(&tab);
+	return (tab.ret);
 }

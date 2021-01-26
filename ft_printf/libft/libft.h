@@ -6,7 +6,7 @@
 /*   By: pgurn <pgurn@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/05 10:53:43 by pgurn             #+#    #+#             */
-/*   Updated: 2021/01/19 21:41:02 by pgurn            ###   ########.fr       */
+/*   Updated: 2021/01/25 20:25:46 by pgurn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,4 +75,21 @@ void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
+
+/*
+** Other Functions
+*/
+
+size_t				ft_is_space(char c);
+int					ft_is_in_stri(char c, char *str);
+size_t				ft_intlen(intmax_t n);
+size_t				ft_intlen_base(uintmax_t n, char *base);
+int					ft_check_base(char *base);
+intmax_t			ft_atoi_base(char *str, char *base);
+char				*ft_convert_base(char *nbr, char *base_from, char *base_to);
+char				*ft_itoa_base(uintmax_t n, char *base);
+char				*ft_uitoa(uintmax_t n);
+size_t				ft_uintlen(uintmax_t n);
+char				*ft_c_to_str(char c);
+
 #endif
