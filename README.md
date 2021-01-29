@@ -10,3 +10,6 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 1. [42toolbox by @alexandregv](https://github.com/alexandregv/42toolbox)
 2. [42_Cheatsheet](https://awesomeopensource.com/project/agavrel/42_CheatSheet)
 3. [FAQ Russian](https://github.com/daniiomir/faq_for_school_21)
+
+## Less Frequently used/referenced tools & Resources
+1. [Secrets of printf](https://www.cypress.com/file/54441/download)
