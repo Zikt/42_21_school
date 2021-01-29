@@ -13,3 +13,4 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 
 ## Less Frequently used/referenced tools & Resources
 1. [Secrets of printf](https://www.cypress.com/file/54441/download)
+2. Almighty vim [Learn Vim For the Last Time: A Tutorial and Primer](https://danielmiessler.com/study/vim/) & [Vim 101: A Beginner’s Guide to Vim](https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/) and [VIM for beginners](https://habr.com/ru/post/440130/)
