@@ -1,2 +1,5 @@
 # 42_21_school
 A repository containing my solutions to exercises at school21(Ecole42 in Russia).
+
+# Useful(Frequently used/Referenced resources)
+1. [learn-c.org free interactive C tutorial] (https://www.learn-c.org/)
