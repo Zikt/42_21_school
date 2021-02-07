@@ -5,6 +5,7 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
 2. [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 3. [The Missing Semester of Your CS Education from MIT](https://missing.csail.mit.edu/)
+4. [BASH Programming - Introduction HOW-TO](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc6)
 
 ## Cool 42 Tools
 1. [42toolbox by @alexandregv](https://github.com/alexandregv/42toolbox)
