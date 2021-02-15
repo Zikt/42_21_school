@@ -1,6 +1,24 @@
 # 42_21_school
 A repository containing my solutions to exercises at school21(Ecole42 in Russia).
 
+
+## Project List in order of submission
+
+
+### 1 cycle only project [Libft](https://github.com/Zikt/42_21_school/tree/main/libft)
+
+### 2 Cycle 1[ft_printf](https://github.com/Zikt/42_21_school/tree/main/ft_printf)
+
+### 2 Cycle 2[get_next_line](https://github.com/Zikt/42_21_school/tree/main/gnl_zikt)
+
+### 2 Cycle 3[Netwhat]
+
+### 3 Cycle 1[ft_server submitted 15/02/2021](https://github.com/Zikt/ft_server)
+Summary: This is a System Administration subject. You will discover Docker and you
+will set up your first web server. Google LEMP...
+
+### 3 Cycle 2[Exam Rank 02 Successful on ]
+
 ## Useful(Frequently used/Referenced resources)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
 2. [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
