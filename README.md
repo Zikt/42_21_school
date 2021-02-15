@@ -24,6 +24,8 @@ will set up your first web server. Google LEMP...
 2. [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 3. [The Missing Semester of Your CS Education from MIT](https://missing.csail.mit.edu/)
 4. [BASH Programming - Introduction HOW-TO](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc6)
+5. [git - the simple guide](https://rogerdudler.github.io/git-guide/)
+6. [1.1 Getting Started - About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 
 ## Cool 42 Tools
 1. [42toolbox by @alexandregv](https://github.com/alexandregv/42toolbox)
