@@ -37,3 +37,5 @@ will set up your first web server. Google LEMP...
 ## Less Frequently used/referenced tools & Resources
 1. [Secrets of printf](https://www.cypress.com/file/54441/download)
 2. Almighty vim [Learn Vim For the Last Time: A Tutorial and Primer](https://danielmiessler.com/study/vim/) & [Vim 101: A Beginner’s Guide to Vim](https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/) and [VIM for beginners](https://habr.com/ru/post/440130/)
+3. [Think like a git](http://think-like-a-git.net/)
+4. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
