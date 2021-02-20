@@ -17,7 +17,9 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 Summary: This is a System Administration subject. You will discover Docker and you
 will set up your first web server. Google LEMP...
 
-### 3 Cycle 2[Exam Rank 02 Successful on ]
+### 3 Cycle 2[Exam Rank 02 Successful on 20/02/2021] - union and get_next_line
+
+### 3 Cycle 3[miniRT]
 
 ## Useful(Frequently used/Referenced resources)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
