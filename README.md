@@ -21,6 +21,8 @@ will set up your first web server. Google LEMP...
 
 ### 3 Cycle 3[miniRT ongoing](https://docs.google.com/document/d/1Zgv7Xen9KxMSgL6_a132YCzErPcdNxoJvK3VU0ahNd0/edit)
 
+### 4 Cycle 1[ft_services Next]
+
 ## Useful(Frequently used/Referenced resources)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
 2. [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
