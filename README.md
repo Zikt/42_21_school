@@ -26,11 +26,12 @@ will set up your first web server. Google LEMP...
 ## Useful(Frequently used/Referenced resources)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
 2. [A Simple Makefile Tutorial](https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
-3. [The Missing Semester of Your CS Education from MIT](https://missing.csail.mit.edu/)
-4. [BASH Programming - Introduction HOW-TO](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc6)
-5. [git - the simple guide](https://rogerdudler.github.io/git-guide/)
-6. [1.1 Getting Started - About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
-7. [Backlog Git Tutorial](https://backlog.com/git-tutorial/)
+3. [GNU Make](http://www.gnu.org/software/make/manual/make.html#toc-Overview-of-make)
+4. [The Missing Semester of Your CS Education from MIT](https://missing.csail.mit.edu/)
+5. [BASH Programming - Introduction HOW-TO](https://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc6)
+6. [git - the simple guide](https://rogerdudler.github.io/git-guide/)
+7. [1.1 Getting Started - About Version Control](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
+8. [Backlog Git Tutorial](https://backlog.com/git-tutorial/)
 
 ## Cool 42 Tools
 1. [42toolbox by @alexandregv](https://github.com/alexandregv/42toolbox)
