@@ -42,6 +42,7 @@ will set up your first web server. Google LEMP...
 2. [42_Cheatsheet](https://awesomeopensource.com/project/agavrel/42_CheatSheet)
 3. [FAQ Russian](https://github.com/daniiomir/faq_for_school_21)
 4. [Noah @ codam Amsterdam - Docker, Make, etc](https://noahloomans.com/)
+5. [badge42](https://github.com/JaeSeoKim/badge42)
 
 ## Less Frequently used/referenced tools & Resources
 1. [Secrets of printf](https://www.cypress.com/file/54441/download)
