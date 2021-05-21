@@ -22,7 +22,8 @@ will set up your first web server. Google LEMP...
 
 ### 3 Cycle 2[Exam Rank 02 Successful on 20/02/2021] - union and get_next_line
 
-### 3 Cycle 3[miniRT submitted 19/05/2021](https://docs.google.com/document/d/1Zgv7Xen9KxMSgL6_a132YCzErPcdNxoJvK3VU0ahNd0/edit)
+### 3 Cycle 3[miniRT submitted 19/05/2021](https://github.com/Zikt/subRT)
+##[RT Notes](https://docs.google.com/document/d/1Zgv7Xen9KxMSgL6_a132YCzErPcdNxoJvK3VU0ahNd0/edit)
 
 ### 3 Cycle 4[Pushwap optional]
 
