@@ -9,6 +9,7 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 
 
 ### 1 cycle only project [Libft](https://github.com/Zikt/42_21_school/tree/main/libft)
+    Check @vvarodi's readme for clear explanation. [vvarodi libft README link](https://github.com/vvarodi/libft_42)
 
 ### 2 Cycle 1[ft_printf](https://github.com/Zikt/42_21_school/tree/main/ft_printf)
 
