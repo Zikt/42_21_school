@@ -52,7 +52,7 @@ will set up your first web server. Google LEMP...
 4. [Noah @ codam Amsterdam - Docker, Make, etc](https://noahloomans.com/)
 5. [badge42](https://github.com/JaeSeoKim/badge42)
 6. [Exams solution repo](https://github.com/markveligod/examrank-02-03-04-05-06)
-7. [All Projects by ](https://github.com/jraleman/42)
+7. [All Projects by jaleman](https://github.com/jraleman/42)
 
 ## Less Frequently used/referenced tools & Resources
 1. [Secrets of printf](https://www.cypress.com/file/54441/download)
