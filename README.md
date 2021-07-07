@@ -26,11 +26,11 @@ will set up your first web server. Google LEMP...
 ### 3 Cycle 3[miniRT submitted 19/05/2021](https://github.com/Zikt/subRT)
 ##[RT Notes](https://docs.google.com/document/d/1Zgv7Xen9KxMSgL6_a132YCzErPcdNxoJvK3VU0ahNd0/edit)
 
-### 3 Cycle 4[Pushwap optional]
+### 3 Cycle 4[minishell 07/07/2021](https://github.com/Zikt/minishell)
 
 ### 4 Cycle 1[ft_services Next]
 
-### 4 Cycle 2[minishell Next]
+### 4 Cycle 2[Pushwap optional]
 
 ### 4 Cycle 3[Exam Rank 03 Successful on___]
 
