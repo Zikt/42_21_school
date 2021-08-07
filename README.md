@@ -8,31 +8,33 @@ A repository containing my solutions to exercises at school21(Ecole42 in Russia)
 ## Project List in order of submission
 
 
-### 1 cycle only project [Libft](https://github.com/Zikt/42_21_school/tree/main/libft)
+### 0 cycle only project [Libft](https://github.com/Zikt/42_21_school/tree/main/libft)
     Check @vvarodi's readme for clear explanation. [vvarodi libft README link](https://github.com/vvarodi/libft_42)
 
-### 2 Cycle 1[ft_printf](https://github.com/Zikt/42_21_school/tree/main/ft_printf)
+### 1 Cycle 1[ft_printf](https://github.com/Zikt/42_21_school/tree/main/ft_printf)
 
-### 2 Cycle 2[get_next_line](https://github.com/Zikt/42_21_school/tree/main/gnl_zikt)
+### 1 Cycle 2[get_next_line](https://github.com/Zikt/42_21_school/tree/main/gnl_zikt)
 
-### 2 Cycle 3[Netwhat]
+### 1 Cycle 3[Netwhat]
 
-### 3 Cycle 1[ft_server submitted 15/02/2021](https://github.com/Zikt/ft_server)
+### 2 Cycle 1[ft_server submitted 15/02/2021](https://github.com/Zikt/ft_server)
 Summary: This is a System Administration subject. You will discover Docker and you
 will set up your first web server. Google LEMP...
 
-### 3 Cycle 2[Exam Rank 02 Successful on 20/02/2021] - union and get_next_line
+### 2 Cycle 2[Exam Rank 02 Successful on 20/02/2021] - union and get_next_line
 
-### 3 Cycle 3[miniRT submitted 19/05/2021](https://github.com/Zikt/subRT)
+### 2 Cycle 3[miniRT submitted 19/05/2021](https://github.com/Zikt/subRT)
 ##[RT Notes](https://docs.google.com/document/d/1Zgv7Xen9KxMSgL6_a132YCzErPcdNxoJvK3VU0ahNd0/edit)
 
-### 3 Cycle 4[minishell 07/07/2021](https://github.com/Zikt/minishell)
+### 2 Cycle 4[minishell 07/07/2021](https://github.com/Zikt/minishell)
 
-### 4 Cycle 1[ft_services Next]
+### 3 Cycle 1[Exam Rank 03 Successful on 07/08/2021 - Mini_paint and Micro_paint]
 
-### 4 Cycle 2[Pushwap optional]
+### 3 Cycle 2[Push Swap on...]
 
-### 4 Cycle 3[Exam Rank 03 Successful on___]
+### 4 Cycle 1[Philosophers]
+
+### 4 Cycle 3[Exam Rank 43 Successful on___]
 
 ## Useful(Frequently used/Referenced resources)
 1. [learn-c.org free interactive C tutorial](https://www.learn-c.org/)
