@@ -62,6 +62,7 @@ will set up your first web server. Google LEMP...
 2. Almighty vim [Learn Vim For the Last Time: A Tutorial and Primer](https://danielmiessler.com/study/vim/) & [Vim 101: A Beginner’s Guide to Vim](https://www.linux.com/training-tutorials/vim-101-beginners-guide-vim/) and [VIM for beginners](https://habr.com/ru/post/440130/)
 3. [Think like a git](http://think-like-a-git.net/)
 4. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
+5. [C Code Style Guidelines](https://www.cs.swarthmore.edu/~newhall/unixhelp/c_codestyle.html)
 
 ## Out of School Tools
 1. [Process for speed-writing a book](http://psgraphics.blogspot.com/2016/01/process-for-speed-writing-book.html)
