@@ -56,6 +56,7 @@ will set up your first web server. Google LEMP...
 6. [Exams solution repo](https://github.com/markveligod/examrank-02-03-04-05-06)
 7. [All Projects by jaleman](https://github.com/jraleman/42) and [a libft I admire](https://github.com/jraleman/open-libft)
 8. [42 Students Projects](https://www.42.us.org/innovation/student-projects/)
+9. [42 XP Calculator](https://42.tbailleu.dev/)
 
 ## Less Frequently used/referenced tools & Resources
 1. [Secrets of printf](https://www.cypress.com/file/54441/download)
