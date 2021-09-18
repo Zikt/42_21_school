@@ -63,6 +63,7 @@ will set up your first web server. Google LEMP...
 3. [Think like a git](http://think-like-a-git.net/)
 4. [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 5. [C Code Style Guidelines](https://www.cs.swarthmore.edu/~newhall/unixhelp/c_codestyle.html)
+6. [Bit Twiddling Hacks By Sean Eron Anderson](http://graphics.stanford.edu/~seander/bithacks.html)
 
 ## Out of School Tools
 1. [Process for speed-writing a book](http://psgraphics.blogspot.com/2016/01/process-for-speed-writing-book.html)
